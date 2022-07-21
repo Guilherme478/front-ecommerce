@@ -1,0 +1,18 @@
+.footer {
+    background-color: #3F51B5;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer > p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 10px auto 5px;
+    text-align: center;
+    color: #fff;
+}
+
+
