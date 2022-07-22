@@ -17,7 +17,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
-
+import { ProductsComponent } from './components/products/products.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CartComponent } from './components/cart/cart.component';
+import { FilterPipe } from './shared/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import {MatListModule} from '@angular/material/list';
     HeaderComponent,
     NavComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProductsComponent,
+    CartComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,8 @@ import {MatListModule} from '@angular/material/list';
     MatInputModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
 
   ],
   providers: [],

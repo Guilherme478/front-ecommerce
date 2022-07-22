@@ -1,0 +1,16 @@
+<div fxLayout="row wrap" fxLayoutGap="20px" class="content-cards">
+  <mat-card class="mat-elevation-z4 card-content" *ngFor="let item of productList" class="example-card" >
+      <img class="img-card" mat-card-image fxLayout="row" src="{{item.image}}" alt="">
+      <mat-card-title fxLayout="row">{{item.title}}</mat-card-title>
+      <mat-card-content fxLayout="row">
+        <p> {{item.description}} </p>
+        <p><strong>Price:</strong> ${{item.price}}</p>
+      </mat-card-content>
+      <mat-card-actions fxLayout="row">
+        <button mat-raised-button color="primary">Adicionar no carrinho</button>
+      </mat-card-actions>
+    </mat-card>
+
+    </div>
+
+
