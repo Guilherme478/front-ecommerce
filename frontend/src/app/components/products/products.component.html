@@ -10,7 +10,7 @@
             </p>  
           </mat-card-content>
           <div fxLayout="row">
-            <p class="text-price"><strong>Price:</strong> ${{item.price}}</p>
+            <p class="text-price"><strong>Price:</strong> ${{item.price | currency: 'BRL'}}</p>
           </div>
           <mat-card-actions >
             <button class="btn" mat-raised-button color="primary">Adicionar no carrinho</button>
