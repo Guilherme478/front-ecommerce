@@ -1,7 +1,51 @@
-.img-card {
-  background-size: contain;
-  margin-bottom: 10px;
-  width: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
+img {
+  width: 100px;
+  height: 130px;
+  margin: auto;
 }
+
+.btn {
+  margin: 0px 43px 3px;
+  width: 100%;
+}
+
+.text-description{
+  width: 100px;
+  height: 200px;
+}
+
+
+.card-content {
+  min-width: 250px;
+  max-width: 423px;
+  margin-bottom: 15px;
+  width: auto;
+  height: auto;
+}
+
+.text-price {
+  color: orange;
+  font-weight: bold;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.title {
+  color: #576081;
+  font-weight: 500;
+  font-size: 19px;
+  text-overflow: ellipsis;
+  width:150px;
+  white-space:nowrap;
+  overflow: hidden;
+  width: 249px;
+}
+
+.text-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap ;
+  width: 240px;
+  height: 40px;
+}
+

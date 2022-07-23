@@ -21,6 +21,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './components/cart/cart.component';
 import { FilterPipe } from './shared/filter.pipe';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -45,8 +46,8 @@ import { FilterPipe } from './shared/filter.pipe';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    HttpClientModule
-
+    HttpClientModule,
+    FlexLayoutModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

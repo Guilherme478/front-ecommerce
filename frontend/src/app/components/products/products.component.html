@@ -1,16 +1,23 @@
-<div fxLayout="row wrap" fxLayoutGap="20px" class="content-cards">
-  <mat-card class="mat-elevation-z4 card-content" *ngFor="let item of productList" class="example-card" >
-      <img class="img-card" mat-card-image fxLayout="row" src="{{item.image}}" alt="">
-      <mat-card-title fxLayout="row">{{item.title}}</mat-card-title>
-      <mat-card-content fxLayout="row">
-        <p> {{item.description}} </p>
-        <p><strong>Price:</strong> ${{item.price}}</p>
-      </mat-card-content>
-      <mat-card-actions fxLayout="row">
-        <button mat-raised-button color="primary">Adicionar no carrinho</button>
-      </mat-card-actions>
-    </mat-card>
-
+    <div class="content mat-elevation-z4">
+      <div class="page__content shadow p-3 position-relative">
+        <div fxLayout="row wrap" fxLayoutGap="20px">
+      <mat-card fxFlex class="mat-elevation-z4 card-content" *ngFor="let item of productList" style="cursor: pointer;" >
+          <img mat-card-image src="{{item.image}}" alt="">
+          <mat-card-title style="margin-top:20px;" class="title">{{item.title}}</mat-card-title>
+          <mat-card-content class="text-description"  fxLayout="row wrap">
+            <p>
+              {{item.description}}
+            </p>  
+          </mat-card-content>
+          <div fxLayout="row">
+            <p class="text-price"><strong>Price:</strong> ${{item.price}}</p>
+          </div>
+          <mat-card-actions >
+            <button class="btn" mat-raised-button color="primary">Adicionar no carrinho</button>
+          </mat-card-actions>
+      </mat-card>
     </div>
+    </div>
+  </div>
 
 
