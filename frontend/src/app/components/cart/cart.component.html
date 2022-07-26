@@ -1,1 +1,60 @@
-<p>cart works!</p>
+<ng-container *ngIf="products.length !=0">
+<div class="mat-elevation-z4">
+    <table *ngFor="let item of products; let i = index">
+      <!-- Id Column -->
+      <ng-container matColumnDef="id">
+        <th>Id</th>
+        <td>{{i+1}}</td>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th>Name</th>
+        <td>{{item.title}}</td>
+      </ng-container>
+  
+      <!-- IMG Column -->
+      <ng-container matColumnDef="img-table">
+          <th>Produto Imagem</th>
+          <td> <img src="{{ item.image }}" alt=""> </td>
+        </ng-container>
+
+      <!-- Description Column -->
+      <ng-container matColumnDef="description">
+          <th>Descrição</th>
+          <td> {{ item.description }} </td>
+        </ng-container>
+        
+        <!-- Price Column -->
+        <ng-container matColumnDef="price">
+          <th>Preço</th>
+          <td>{{ item.price | currency: 'BRL' }}</td>
+        </ng-container>
+
+        <!-- Quantity Column -->
+        <ng-container matColumnDef="quantity">
+          <th>Quantidade</th>
+          <td>{{ item.quantity }}</td>
+        </ng-container>
+
+        <!-- Total Column -->
+        <ng-container matColumnDef="total">
+          <th>Total</th>
+          <td>{{ item.total }}</td>
+        </ng-container>
+
+      <!-- Action Column -->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>Ações</th>
+        <td>
+            <button mat-raised-button (click)="removeItem(item)" color="warn">
+                <i class="material-icons">
+                    delete
+                </i>
+            </button>
+        </td>
+      </ng-container>
+    </table>
+  </div>
+</ng-container>
+

@@ -13,7 +13,7 @@
             <p class="text-price"><strong>Price:</strong> ${{item.price | currency: 'BRL'}}</p>
           </div>
           <mat-card-actions >
-            <button class="btn" mat-raised-button color="primary">Adicionar no carrinho</button>
+            <button class="btn" mat-raised-button (click)=addtocart(item) color="primary">Adicionar no carrinho</button>
           </mat-card-actions>
       </mat-card>
     </div>

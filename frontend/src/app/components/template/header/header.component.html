@@ -3,16 +3,19 @@
       <button mat-icon-button (click)="toggleSidebar()">
         <mat-icon>menu</mat-icon>
       </button>    
+        <a routerLink="/home"> 
+         <img class="logo" src="assets/img/logoecommerce.png" alt="logo">
+        </a>
        <div>
-        <a mat-button [routerLink]="'/home'"> <img class="logo" src="assets/img/logoecommerce.png" alt="logo"> </a>
         <a mat-button [routerLink]="'/accounts'"> Accounts </a>
         <a mat-button [routerLink]="'/create-account'"> Create Account </a>
         <a mat-button [routerLink]="'/products'"> Produtos </a>
         <button mat-button color="primary">
           <button class="car">
-            <mat-icon>shopping_cart</mat-icon>
+            <mat-icon matBadge="5" matBadgeColor="warn" routerLink="cart">shopping_cart</mat-icon>
           </button> 
         </button>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
+  

@@ -22,6 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './components/cart/cart.component';
 import { FilterPipe } from './shared/filter.pipe';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatToolbarModule,
     MatListModule,
     HttpClientModule,
-    FlexLayoutModule 
+    FlexLayoutModule,
+    MatBadgeModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
