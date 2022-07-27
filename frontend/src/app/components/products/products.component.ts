@@ -17,7 +17,8 @@ export class ProductsComponent implements OnInit {
     this.api.getProduct()
     .subscribe(response => {
       this.productList = response
-    })
+      console.log(this.productList)
+    });
   }
 
   addtocart(item: any){
